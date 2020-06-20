@@ -1,0 +1,205 @@
+local first = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local tl2 = Instance.new("TextLabel")
+local tl = Instance.new("TextLabel")
+first.Name = "first"
+first.Parent = game.CoreGui
+Frame.Parent = first
+Frame.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+Frame.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Frame.BorderSizePixel = 2
+Frame.Active = true
+Frame.Draggable = true
+Frame.Position = UDim2.new(0.138706669, 0, 0.290697694, 0)
+Frame.Size = UDim2.new(0, 256, 0, 203)
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+TextBox.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+TextBox.BorderSizePixel = 2
+TextBox.Position = UDim2.new(0.108935684, 0, 0.58325702, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.Cartoon
+TextBox.Text = "Please enter your key here"
+TextBox.TextColor3 = Color3.new(1, 1, 1)
+TextBox.TextScaled = true
+TextBox.TextSize = 14
+TextBox.TextWrapped = true
+tl2.Name = "tl2"
+tl2.Parent = Frame
+tl2.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+tl2.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+tl2.Position = UDim2.new(0.000662624836, 0, 0.00183296204, 0)
+tl2.Size = UDim2.new(0, 256, 0, 30)
+tl2.Font = Enum.Font.Cartoon
+tl2.Text = "RoBeats GUI"
+tl2.TextColor3 = Color3.new(1, 1, 1)
+tl2.TextSize = 14
+tl.Name = "tl"
+tl.Parent = Frame
+tl.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+tl.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+tl.BorderSizePixel = 0
+tl.Position = UDim2.new(0.000662624836, 0, 0.293513954, 0)
+tl.Size = UDim2.new(0, 256, 0, 30)
+tl.Font = Enum.Font.Cartoon
+tl.Text = "Please enter received key below, in order to use the script."
+tl.TextColor3 = Color3.new(1, 1, 1)
+tl.TextScaled = true
+tl.TextSize = 14
+tl.TextWrapped = true
+_G.table = {'googledmusic'}
+TextBox.FocusLost:connect(function()
+for i,v in pairs(_G.table) do
+if TextBox.Text == v then
+wait(0.25)
+TextBox.Text = "Redirecting..."
+wait(0.30)
+local second = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local welcome = Instance.new("TextLabel")
+local ap = Instance.new("TextButton")
+local _5l5 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local tl4 = Instance.new("TextLabel")
+second.Name = "second"
+second.Parent = game.CoreGui
+Frame.Parent = second
+Frame.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+Frame.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Frame.BorderSizePixel = 2
+Frame.Active = true
+Frame.Draggable = true
+Frame.Position = UDim2.new(0.417057157, 0, 0.290697694, 0)
+Frame.Size = UDim2.new(0, 256, 0, 203)
+welcome.Name = "welcome"
+welcome.Parent = Frame
+welcome.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+welcome.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+welcome.BorderSizePixel = 0
+welcome.Position = UDim2.new(0.000662624836, 0, 0.145730704, 0)
+welcome.Size = UDim2.new(0, 256, 0, 30)
+welcome.Font = Enum.Font.Cartoon
+welcome.Text = "Welcome ".. game:service'Players'.LocalPlayer.Name
+welcome.TextColor3 = Color3.new(1, 1, 1)
+welcome.TextSize = 14
+welcome.TextWrapped = true
+welcome.TextXAlignment = Enum.TextXAlignment.Left
+ap.Name = "ap"
+ap.Parent = Frame
+ap.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+ap.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+ap.BorderSizePixel = 2
+ap.Position = UDim2.new(0.03125, 0, 0.458128095, 0)
+ap.Size = UDim2.new(0, 109, 0, 30)
+ap.Font = Enum.Font.Cartoon
+ap.Text = "Auto Player"
+ap.TextColor3 = Color3.new(1, 1, 1)
+ap.TextSize = 14
+_5l5.Name = "5l5"
+_5l5.Parent = Frame
+_5l5.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+_5l5.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+_5l5.Position = UDim2.new(0.000662624836, 0, 0.00183296204, 0)
+_5l5.Size = UDim2.new(0, 256, 0, 30)
+_5l5.Font = Enum.Font.Cartoon
+_5l5.Text = "RoBeats GUI"
+_5l5.TextColor3 = Color3.new(1, 1, 1)
+_5l5.TextSize = 14
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+TextButton.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+TextButton.BorderSizePixel = 2
+TextButton.Position = UDim2.new(0.5390625, 0, 0.458128095, 0)
+TextButton.Size = UDim2.new(0, 109, 0, 30)
+TextButton.Font = Enum.Font.Cartoon
+TextButton.Text = "Soon™"
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.TextSize = 14
+tl4.Name = "tl4"
+tl4.Parent = Frame
+tl4.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+tl4.BackgroundTransparency = 1
+tl4.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+tl4.BorderSizePixel = 0
+tl4.Position = UDim2.new(0.109375, 0, 0.581280768, 0)
+tl4.Size = UDim2.new(0, 69, 0, 30)
+tl4.Font = Enum.Font.Cartoon
+tl4.Text = "Keybind : G"
+tl4.TextColor3 = Color3.new(1, 1, 1)
+tl4.TextSize = 14
+tl4.TextWrapped = true
+tl4.TextXAlignment = Enum.TextXAlignment.Left
+function onKeyPress(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.F5 then
+    Frame.Visible = not Frame.Visible
+    end
+   end  
+game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+ap.MouseButton1Click:connect(function()
+local held = {}
+local enabled = false
+game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(key)
+if key == "g" then
+enabled = not enabled
+print(enabled)
+end
+end)
+local function updateauto(_game, slot)
+local game_slot = _game:get_local_game_slot()
+if slot ~= game_slot then return end
+local parent_tracksystem = _game:get_tracksystem(game_slot)
+local parent_tracksystem_notes = parent_tracksystem._notes
+for i=1,parent_tracksystem_notes:count() do
+local itr_note = parent_tracksystem_notes:get(i)
+local itr_note_track = itr_note:get_track_index(i)
+if held[itr_note_track] then
+local did_release, note_result = itr_note:test_release(_game)
+if did_release and note_result == 3 then
+held[itr_note_track] = nil
+parent_tracksystem:release_track_index(_game,itr_note_track)
+end
+elseif enabled then
+local did_hit, note_result = itr_note:test_hit(_game)
+if did_hit and note_result == 3 then
+parent_tracksystem:press_track_index(_game,itr_note_track)
+if itr_note.Type == "HeldNote" then
+held[itr_note_track] = true
+else
+spawn(function()
+parent_tracksystem:release_track_index(_game,itr_note_track)
+end)
+end
+end
+end
+end
+end
+for i,v in pairs(getnilinstances())do
+if v.ClassName=='ModuleScript'then
+spawn(function()
+local m=require(v)
+if type(m)=='table'and rawget(m, "new") and type(m.new)=='function'then
+local upvals = debug.getupvalues(m.new)
+if upvals.TrackSystem then
+local m = upvals.TrackSystem
+local oldnew = m.new
+m.new = function(...)
+local tracksystem = oldnew(...)
+local oldupdate = tracksystem.update
+function tracksystem:update(scale, game)
+updateauto(game, tracksystem._game_slot)
+return oldupdate(tracksystem, scale, game)
+end
+return tracksystem
+end
+end
+end
+end)
+end
+end
+end)
+wait(0.10)
+game.CoreGui.first:Destroy()
+end
+end
+end)
